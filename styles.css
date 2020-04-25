@@ -16,6 +16,7 @@
   width: 900px;
   height: 630px;
   margin: auto;
+  position: relative;
 }
 
 #title {
@@ -28,17 +29,20 @@
   font-weight: 600;
 }
 
-#tooltip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.scatter-plot {
   position: absolute;
-  background-color: rgb(137, 172, 247);
+}
+
+.dot {
+  opacity: 0.8;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: rgb(200, 218, 240);
   border-radius: 8px;
   border: 0;
-  width: 200px;
-  height: 80px;
-  font-size: 14px;
+  padding: 12px;
+  font-size: 12px;
   pointer-events: none;
 }
