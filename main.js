@@ -93,7 +93,7 @@ d3.json(url)
           .html(
             `${d.Name}: ${d.Nationality}<br>Year: ${d.Year} Time: ${data[i].Time}${newLine}${d.Doping}`
           )
-          .style('left', `${xScale(d.Year) + 100}px`)
+          .style('left', `${xScale(d.Year) + 300}px`)
           .style('top', `${yScale(d.Time)}px`);
       })
       .on('mouseout', () =>
